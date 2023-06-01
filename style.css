@@ -112,7 +112,9 @@ p {
   padding: 0;
   margin: -3% 0 0 -7%;
 }
-
+.slogan {
+  text-transform: capitalize;
+}
 
 .reveal {
   position: relative;
@@ -227,7 +229,7 @@ p {
   position: absolute;
   z-index: -1;
   opacity:.2;
-  border-radius: 50%;
+
 }
 
 .about::before{
@@ -235,13 +237,16 @@ p {
   width:50rem;
   background:#ccc;
   bottom:-10rem; left:-10rem;
+  border-radius: 50%;
 }
 
 .about::after{
-  height:60rem;
-  width:60rem;
-  background:var(--color);
-  top:-10rem; right:-10rem;
+  height: 60rem;
+  width: 60rem;
+  background: url("bg-logo.png");
+  top: -5%; right: 1%;
+  opacity: .1;
+
 }
 
 .service{
@@ -459,6 +464,12 @@ p {
     height: 50%;
     object-fit: cover;
     padding: 0;
+
+  }
+  .about::after {
+    width: 65rem;
+    height: 65rem;
+    top: -10%; right: 0;
 
   }
   .logo-sub {
